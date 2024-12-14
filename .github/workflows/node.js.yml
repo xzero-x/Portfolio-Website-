@@ -32,11 +32,6 @@ jobs:
     - run: npm ci
     - run: npm test
     - run: npm run build --if-present
-    - name: Reset gh-pages branch
-      run: |
-        git fetch origin gh-pages
-        git branch -D gh-pages || true
-        git checkout --orphan gh-pages
     - name: Deploy with gh-pages
       run: |
         git remote set-url origin https://git:${GITHUB_TOKEN}@github.com/${GITHUB_REPOSITORY}.git
