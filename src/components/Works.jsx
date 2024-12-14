@@ -4,7 +4,7 @@ import { Tilt } from "react-tilt";
 
 import { styles } from "../styles";
 import { github } from "../assets";
-import { SectionWrapper } from "../HOC";
+import { SectionWrapper } from "../hoc";
 import { projects } from "../constants";
 import { fadeIn, textVariant } from "../utils/motion";
 
