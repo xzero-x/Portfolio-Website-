@@ -3,7 +3,7 @@ import react from '@vitejs/plugin-react';
 
 export default defineConfig({
   plugins: [react()],
-  base: "/website-portfolio",
+  base: "/Portfolio-website",
   build: {
     outDir: 'build' // Ensure output is in the 'build' directory
   }
